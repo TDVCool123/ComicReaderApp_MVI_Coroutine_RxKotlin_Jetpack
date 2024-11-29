@@ -11,6 +11,7 @@ comicApp {
 }
 
 dependencies {
+  implementation("com.miguelcatalan:materialsearchview:1.4.0")
   implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
   implementation(project(deps.module.baseUi))
   implementation(project(deps.module.utils))
