@@ -13,7 +13,7 @@ import retrofit2.http.Query
 import retrofit2.http.Streaming
 import retrofit2.http.Url
 
-const val COMIC_BASE_URL = "https://comic-app-081098.herokuapp.com"
+const val COMIC_BASE_URL = "http://54.197.110.184/"
 
 interface ComicApiService {
   /**
