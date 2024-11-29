@@ -26,12 +26,16 @@ allprojects {
     maven(url = "https://oss.sonatype.org/content/repositories/snapshots")
     maven(url = "https://s01.oss.sonatype.org/content/repositories/snapshots/")
     maven(url = "https://jitpack.io")
-    maven(url = "https://repo.repsy.io/mvn/chrynan/public")
+    maven(url = "https://repo.repsy.io/mvn/chrynan/public") {
+        metadataSources {
+            artifact()  // Asegura que Gradle pueda resolver el artefacto
+        }
+    }
     maven {
       url = uri("http://dl.bintray.com/amulyakhare/maven")
       isAllowInsecureProtocol = true
     }
-  }
+  } 
 }
 
 
