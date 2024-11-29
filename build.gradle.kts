@@ -7,7 +7,7 @@ buildscript {
 subprojects {
   apply(from = "${rootProject.rootDir}/spotless.gradle.kts")
   dependencies {
-    implementation 'com.miguelcatalan:materialsearchview:1.4.0'
+    implementation("com.miguelcatalan:materialsearchview:1.4.0")
   }
 }
 
