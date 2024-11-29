@@ -6,10 +6,6 @@ buildscript {
 
 subprojects {
   apply(from = "${rootProject.rootDir}/spotless.gradle.kts")
-  dependencies {
-        // Aquí se usa la notación correcta para agregar la dependencia en un subproyecto
-        implementation("com.miguelcatalan:materialsearchview:1.4.0")
-    }
 }
 
 allprojects {
