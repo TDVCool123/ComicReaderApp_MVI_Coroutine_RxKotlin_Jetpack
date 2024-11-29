@@ -28,6 +28,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-${{ github.job }}-
 
+      - name: Clean and build with dependencies refresh
+        run: ./gradlew clean build --refresh-dependencies
+        
       - name: Make gradlew executable
         run: chmod +x ./gradlew
 
