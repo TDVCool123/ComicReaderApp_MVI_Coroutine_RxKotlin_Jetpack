@@ -35,6 +35,7 @@ allprojects {
       url = uri("http://dl.bintray.com/amulyakhare/maven")
       isAllowInsecureProtocol = true
     }
+    maven(url = "https://repository.liferay.com/nexus/content/repositories/public/")
   } 
 }
 
