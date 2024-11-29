@@ -6,9 +6,6 @@ buildscript {
 
 subprojects {
   apply(from = "${rootProject.rootDir}/spotless.gradle.kts")
-  dependencies {
-    implementation("com.miguelcatalan:materialsearchview:1.4.0")
-  }
 }
 
 allprojects {
@@ -35,6 +32,10 @@ allprojects {
       isAllowInsecureProtocol = true
     }
   }
+  dependencies {
+        // Aquí se debe usar la notación adecuada para Kotlin DSL
+        implementation("com.miguelcatalan:materialsearchview:1.4.0")
+    }
 }
 
 
