@@ -13,7 +13,7 @@ import retrofit2.http.Query
 import retrofit2.http.Streaming
 import retrofit2.http.Url
 
-const val COMIC_BASE_URL = "https://54.197.110.184/"
+const val COMIC_BASE_URL = "http://localhost:3000"
 
 interface ComicApiService {
   /**
